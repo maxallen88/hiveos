@@ -44,11 +44,14 @@ def leer_y_modificar_log():
                     try:
                         # Extraer el valor del hashrate
                         hashrate = float(line.split()[1])
+                        print(f"Hashrate original: {hashrate}")
+                        
                         # Modificar el hashrate
                         hashrate_modificado = modificar_valores(hashrate)
+                        print(f"Hashrate modificado: {hashrate_modificado}")
+                        
                         # Reemplazar el valor en el log
                         log_data[i] = f"hashrate {hashrate_modificado}\n"
-                        print(f"Hashrate modificado a: {hashrate_modificado}")
                     except ValueError as e:
                         print(f"Error al convertir hashrate a float: {e}")
                         continue
@@ -61,4 +64,3 @@ def leer_y_modificar_log():
 
 if __name__ == "__main__":
     leer_y_modificar_log()
-
