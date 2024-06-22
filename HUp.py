@@ -2,7 +2,7 @@ import os
 import time
 
 # Ruta al archivo de log del minero (actualizar según sea necesario)
-log_file_path = "/hive/miners/custom/qubjetskiAMDGPU/gpu/log/2024-06-22.log"
+log_file_path = "/hive/miners/custom/qubjetskiAMDGPU/gpu/log/2024-06-21.log"
 
 # Intervalo de tiempo para leer el archivo de log (en segundos)
 interval = 0.7
@@ -64,4 +64,3 @@ def leer_y_modificar_log():
 
 if __name__ == "__main__":
     leer_y_modificar_log()
-
